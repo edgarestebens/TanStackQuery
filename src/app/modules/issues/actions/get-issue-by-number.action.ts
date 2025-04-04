@@ -1,9 +1,10 @@
 import { sleep } from '@helpers/sleep';
-import { environment } from 'src/environments/environment';
 import { GitHubIssue } from '../interfaces/github-issue.interface';
+import { environment } from 'src/environments/environment';
 
 const BASE_URL = environment.baseUrl;
 const GITHUB_TOKEN = environment.gitHubToken;
+
 
 export const getIssueByNumber = async (
   issueNumber: string
